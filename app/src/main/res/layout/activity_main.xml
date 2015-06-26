@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:background="#ff0000"/>
+
+            <com.example.zhanghq.swipetest.SwipeRelativeLayout
+                android:id="@+id/rl_swip"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:clickable="true"
+                android:background="#ffffff"
+                >
+
+                <TextView
+                    android:id="@+id/tv_swip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/selector_btn_press"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:textColor="#121212"
+                    android:text="Swip Me"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="100dp"
+                    android:layout_marginRight="-100dp"
+                    android:layout_height="fill_parent"
+                    android:src="@mipmap/ic_launcher"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"/>
+
+            </com.example.zhanghq.swipetest.SwipeRelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:background="#0000ff"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
